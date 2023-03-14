@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>corona_world</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id=header>
+    <h2>NHN_ACADEMY - 임태원</h2>
+    <h3 id="date"></h3>
+</div>
+<div id="body">
+    <div id="areaSelector">
+        <select id="select" onchange=selectGetData(this.value)>
+        </select>
+    </div>
+    <div id="tableHeader">
+        <div class="location">국가</div>
+        <div class="accumulate">누적 확진자</div>
+        <div class="deathRate">사망률</div>
+    </div>
+    <div id="tableBody">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="index.js"></script>
+    </div>
+    <div id=tableFoot>
+
+    </div>
+    <div id="regions_div" style="width: 900px; height: 500px;"></div>
+</div>
+</body>
+</html>

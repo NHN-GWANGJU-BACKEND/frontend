@@ -1,0 +1,104 @@
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h3{
+    margin : 0px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#body {
+    display: flex;
+    flex-direction: column;
+}
+
+#tableHeader {
+    display: flex;
+    border: 1px solid black;
+    width: 750px;
+    justify-content: center;
+    height: 40px;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.accumulate, .location, .new {
+    display: flex;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #767a93;
+    color: white;
+}
+
+.accumulate, .location {
+    border-right: 1px solid black;
+}
+
+.accumulate {
+    background-color: #5f6388;
+}
+
+#tableBody {
+    border: 1px solid black;
+}
+
+.tableContent {
+    display: flex;
+    width: 750px;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+}
+
+.left, .center, .right {
+    background-color: white;
+    color: black;
+    border-top: 1px solid silver;
+
+}
+
+.left, .center {
+    border-right: 1px solid silver;
+}
+
+.center {
+    background-color: #f9fafd;
+}
+
+.right {
+    color: #ee5152;
+}
+
+a {
+    text-decoration: none;
+    color: #0068c3;
+}
+
+a:visited {
+    color: #0068c3;
+}
+
+#tableFoot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    margin-bottom: 100px;
+    font-size: 18px;
+}
+
+#prevBtn, #nextBtn{
+    line-height: 5px;
+    font-size: 24px;
+    cursor: pointer;
+
+}

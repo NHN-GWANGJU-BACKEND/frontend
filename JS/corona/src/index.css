@@ -1,0 +1,65 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 160px;
+}
+
+#monthContainer{
+    display: flex;
+    gap: 60px;
+    font-weight: bold;
+}
+
+#present{
+    font-size: 50px;
+}
+#previous,#next{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#body{
+    display: flex;
+    flex-direction: column;
+}
+
+#tableHeader{
+    background-color: hsl(158deg 90% 35%);
+    color: hsl(156deg 45% 98%);
+    display: flex;
+}
+
+.reference,.update {
+    display: flex;
+    border-right: 1px solid hsl(156deg 45% 98%);
+    width:30%;
+    height:40px;
+    padding-left: 5px;
+    align-items: center;
+}
+
+.dead,.confirm{
+    display: flex;
+    border-right: 1px solid hsl(156deg 45% 98%);
+    width:20%;
+    height:40px;
+    padding-left: 5px;
+    align-items: center;
+}
+
+#tableBody{
+    display: flex;
+    flex-direction: column;
+}
+
+.tableContent{
+    display: flex;
+    border-left: #7e7e7e;
+}
+
+.tableContent >.reference,.tableContent >.update,.tableContent >.dead,.tableContent >.confirm{
+    border-right: 1px solid #7e7e7e;
+    border-bottom: 1px solid  #7e7e7e;
+}

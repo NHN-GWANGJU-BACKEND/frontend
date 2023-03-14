@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>corona</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<header>
+    <h1>코로나 19 현황</h1>
+    <div id = "monthContainer">
+        <span id = "previous">이전(월)</span>
+        <span id = "present">9월</span>
+        <span id = "next">이후(월)</span>
+    </div>
+</header>
+<div id=body>
+    <div id = "tableHeader">
+        <div class = "reference">기준일</div>
+        <div class = "confirm">누적(확진자 수)</div>
+        <div class = "dead">누적(사망자 수)</div>
+        <div class = "update">update</div>
+    </div>
+    <div id = "tableBody">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    </div>
+    <script src="index.js"></script>
+    <div id="chart_div"></div>
+
+</div>
+</body>
+</html>
