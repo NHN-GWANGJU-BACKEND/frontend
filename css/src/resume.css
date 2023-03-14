@@ -1,0 +1,317 @@
+ul {
+    padding: 0;
+    margin-left: 22px;
+}
+
+#container {
+    padding: 50px 200px 50px;
+}
+
+#nameContainer {
+    display: flex;
+    border: 1px solid black;
+}
+
+#img > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 220px;
+    border-right: 0.1em solid black;
+    padding: 3px;
+}
+
+.column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    height: 100%;
+}
+
+.content:nth-child(2n+1) {
+    flex: 1;
+}
+
+.content:nth-child(2n) {
+    flex: 2;
+}
+
+.content > ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content > ul > li {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+#resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid black;
+}
+
+
+#infoContainer {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+#infoImg {
+    background-image: url("image/information-button.png");
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-left: 80px;
+}
+
+#skill {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.align {
+    font-weight: bold;
+    font-size: 24px;
+    width: 200px;
+    height: 40px;
+    position: relative;
+    top: 8px
+}
+
+#careerContainer {
+    padding-left: 15px;
+    border: 1px solid black;
+    flex-grow: 1;
+
+}
+
+article > h3 {
+    margin-left: 10px;
+    margin-bottom: 7px;
+}
+
+.underLine {
+    margin-left: 10px;
+    margin-bottom: 7px;
+    width: 30%;
+    border: 1px solid #bdbdbd;
+}
+
+.article {
+    font-size: 16px;
+}
+
+.article > ul > li {
+    margin-bottom: 12px;
+}
+
+#skillContainer {
+    display: flex;
+    border: 1px solid black;
+    width: 100%;
+    background-color: #fff3f2;
+}
+
+#inner {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+}
+
+#inner > ul {
+    list-style: none;
+}
+
+#inner > ul > li {
+    display: flex;
+    font-size: 20px;
+    padding-left: 40px;
+    margin-top: 20px;
+    align-items: center;
+    gap: 4px;
+}
+
+
+#red {
+    display: block;
+    background-image: url("image/red.png");
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+#blue {
+    background-image: url("image/blue.png");
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+#grey {
+    background-image: url("image/grey.png");
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+#yellow {
+    background-image: url("image/yellow.png");
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+
+#chart {
+    display: flex;
+    height: 300px;
+}
+
+
+.pie {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    overflow: hidden;
+    bottom: -180px;
+    left: 550px;
+    transform-origin: left center
+}
+
+.pie.big {
+    width: 200px;
+    height: 200px;
+    left: 50px;
+    transform-origin: center center
+}
+
+.pie:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    left: -100px;
+    border-radius: 100px 0 0 100px;
+    transform-origin: right center
+}
+
+.pie.big:before {
+    left: 0
+}
+
+.pie.big:after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    left: 100px;
+    border-radius: 0 100px 100px 0
+}
+
+.pie:nth-of-type(1):before, .pie:nth-of-type(1):after {
+    background-color: #de595a;
+}
+
+.pie:nth-of-type(2):after, .pie:nth-of-type(2):before {
+    background-color: #898b8b;
+
+}
+
+.pie:nth-of-type(3):after, .pie:nth-of-type(3):before {
+    background-color: #0000f5;
+
+}
+
+.pie:nth-of-type(4):after, .pie:nth-of-type(4):before {
+    background-color: #ffff00;
+
+}
+
+.pie[data-start="145"] {
+    transform: rotate(140deg)
+}
+
+.pie[data-start="230"] {
+    transform: rotate(230deg)
+}
+
+.pie[data-start="302"] {
+    transform: rotate(180deg)
+}
+
+.pie[data-value="40"]:before {
+    transform: rotate(145deg)
+}
+
+.pie[data-value="25"]:before {
+    transform: rotate(90deg)
+}
+
+.pie[data-value="20"]:before {
+    transform: rotate(72deg)
+}
+
+.pie[data-value="15"]:before {
+    transform: rotate(302deg)
+}
+
+
+#programmingSkill{
+    margin-left: 350px;
+    margin-top : 15px;
+    font-size: 20px;
+    display: flex;
+}
+
+#programmingSkill>div>ul>li{
+    margin-top:10px;
+}
+
+
+#progress{
+    margin-top: 14px;
+}
+
+.bar{
+    margin-left: 20px;
+    width:300px;
+    border: 10px solid red;
+    margin-top: 12px;
+}
+
+.bar:nth-child(2n):nth-child(n+2){
+    width: 200px;
+}
+
+.bar:nth-child(2n+1):nth-child(n+3){
+    width: 400px;
+}
